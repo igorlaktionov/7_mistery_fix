@@ -1,12 +1,12 @@
 from math import sqrt
 
 
-def get_roots(average_coefficient, leading_coefficient, free_member):
-    discriminant = leading_coefficient ** 2 - 4 * average_coefficient * free_member
+def get_roots(leading_coefficient, middle_coefficient, free_member):
+    discriminant = middle_coefficient ** 2 - 4 * leading_coefficient * free_member
     if discriminant < 0:
         return None, None
-    root1 = (-leading_coefficient - sqrt(discriminant)) / (2 * average_coefficient)
-    root2 = (-leading_coefficient + sqrt(discriminant)) / (2 * average_coefficient)
+    root1 = (-middle_coefficient - sqrt(discriminant)) / (2 * leading_coefficient)
+    root2 = (-middle_coefficient + sqrt(discriminant)) / (2 * leading_coefficient)
     if discriminant == 0:
         return root1, None
     else:

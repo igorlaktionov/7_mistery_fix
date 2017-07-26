@@ -9,13 +9,13 @@
 Если дискриминант положителен то будет 2 корня
 
 # Как использовать
-решаемые уравнения leading_coefficient * x * x + average_coefficient * x + free_member
+решаемые уравнения leading_coefficient * x * x + middle_coefficient * x + free_member
 
 где:
 
-    average_coefficient - первый аргумент функции
+    leading_coefficient - первый аргумент функции
     
-    leading_coefficient - второй аргумент функции
+    middle_coefficient - второй аргумент функции
     
     free_member - третий аргумент функции
 
